@@ -1,0 +1,48 @@
+class Reservebankofindia								//Hierechical inheritance
+{
+	void operation()									// super class
+	{
+		System.out.println("Rules and regulations for bank");
+	}
+	void withdraw()
+	{
+		System.out.println("Withdraw money");
+	}
+	void deposite()
+	{
+		System.out.println("deposite money");
+	}
+}
+class Sbi extends Reservebankofindia					//subclass-1
+{
+	void govpenction()
+	{
+		System.out.println("provide penction scheme");
+	}
+}
+class Axis extends Reservebankofindia					//subclass-2
+{
+	void fasttag()
+	{
+		System.out.println("Provide fast tag");
+	}
+}
+class citi  extends Reservebankofindia					//subclass-3
+{
+	void moreloan()
+	{
+		System.out.println("Gives more loan");
+	}
+}
+
+public class Program2 
+{
+	public static void main (String[] args)
+	{
+		citi c1 =new citi();
+		c1.operation();
+		c1.withdraw();
+		c1.deposite();
+		c1.moreloan();
+	}
+}
